@@ -1,0 +1,14 @@
+ Application application = new Application();
+
+                var doc = application.Documents.Open(wordFilename, false, true);
+
+                object fileFormat = WdSaveFormat.wdFormatPDF;
+                object oMissing = System.Reflection.Missing.Value;
+                object outputFileName = outputFile;
+
+                object saveChanges = WdSaveOptions.wdDoNotSaveChanges;
+
+                doc.Close(ref oMissing, ref oMissing, ref oMissing);
+                doc = null;
+                application.Quit(ref oMissing, ref oMissing, ref oMissing);
+                application = null;
