@@ -24,7 +24,7 @@
 					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Left">
-					<font fontName="Arial" size="7"/>
+					<font fontName="Arial" size="7" isItalic="true"/>
 					<paragraph lineSpacingSize="1.0" rightIndent="0"/>
 				</textElement>
 				<text><![CDATA[SOCIEDADE DE FORMAÇÃO, CONSULTORIA E AUDITORIA EM TRANSPORTES E COMUNICAÇÕES, SA]]></text>
@@ -34,7 +34,7 @@
 				<imageExpression><![CDATA[$P{Logo}]]></imageExpression>
 			</image>
 			<line direction="BottomUp">
-				<reportElement x="60" y="35" width="450" height="1" uuid="1889b9db-7388-4d8a-8cdb-06b874455eb8"/>
+				<reportElement x="20" y="35" width="490" height="1" uuid="1889b9db-7388-4d8a-8cdb-06b874455eb8"/>
 				<graphicElement>
 					<pen lineStyle="Solid" lineColor="#354C9F"/>
 				</graphicElement>

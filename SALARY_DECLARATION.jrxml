@@ -48,7 +48,7 @@
 				<textElement textAlignment="Center" markup="none">
 					<font fontName="Arial" size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[CONSIGNAÇÃO DE SALÁRIO]]></text>
+				<text><![CDATA[DECLARAÇÃO]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
@@ -62,11 +62,8 @@
 				<textFieldExpression><![CDATA[String.format("\n\nTRANSCOM, SA, com sede no Prolong. da Av. Kim Il Sung, IFT/TMCEL, Edifício D1, na Cidade " +
                 "de Maputo, matriculada na Conservatória do Registo das Entidades Legais, com o número  101312968, " +
                 "titular do NUIT 400006938, vem por este meio declarar que"+ " o/a Sr/a. %s, é seu/sua " +
-                "%s, com %s, %s, exercendo as funções de %s.\n\nMais se informa que o seu salário líquido de MZN %s, " +
-                "assim como outras remunerações, bónus atribuídos ou " +"indemnizações, serão creditados na conta n.º %s, " +
-                "titulada pelo/a colaborador/a acima referenciado/a, até instruções em contrário por escrito do BCI, " +
-                "Sarl, tendo como datas previstas para pagamento de 19 a 22 de cada mês.\n\n\n"
-                +"Maputo, %s\n\n\n\n", $P{Name}, $P{TypeOfEmployee}, $P{ProfessionalSituation}, $P{ContractDuration}, $P{Profession}, $P{NetSalary}, $P{AccountNumber}, $P{DocDate})]]></textFieldExpression>
+                "%s, com %s, %s, exercendo as funções de %s.\n\nMais se informa que o seu salário é líquido de MZN.\n\n"
+                +"Maputo, %s\n\n\n\n", $P{Name}, $P{TypeOfEmployee}, $P{ProfessionalSituation}, $P{ContractDuration}, $P{Profession}, $P{NetSalary}, $P{DocDate})]]></textFieldExpression>
 			</textField>
 			<staticText>
 				<reportElement x="110" y="189" width="340" height="21" uuid="b77503e9-720b-4e80-80f3-430a007859d3"/>
